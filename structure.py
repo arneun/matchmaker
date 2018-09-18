@@ -24,6 +24,13 @@ class Player:
     
     def __init__(self, player_name=None):
         self.name = player_name
+        self.points = 0 # should be used only in swiss system
+                
+    def winner(self):
+        self.points = self.points + 1
+
+    def get_points(self):
+        return self.points
 
     def get_name(self):
         return self.name
