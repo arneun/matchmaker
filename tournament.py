@@ -6,10 +6,8 @@ from random import shuffle
 class Tournament(Contest):
 
     def __init__(self, player_names):
-        self.players = []
-            
-        register_players()
-        
+        super().__init__(player_names)
+
         shuffle(self.players)
         
         self.matches = assign_matches(players)

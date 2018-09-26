@@ -6,10 +6,7 @@ from random import shuffle
 class Swiss(Contest):
 
     def __init__(self, player_names):
-        self.players = []
-        self.matches = []
-        
-        register_players()
+        super().__init__(player_names)
         
         shuffle(self.players)
         
